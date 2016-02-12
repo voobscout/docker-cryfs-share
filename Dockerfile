@@ -9,7 +9,7 @@ RUN export DEBIAN_FRONTEND='noninteractive' && \
     apt-get -qq update && \
     apt-get -qqy dist-upgrade && \
     apt-get install -qqy \
-    nfs-kernel-server samba inotify-tools wget sudo lsb-release && \
+    nfs-kernel-server samba inotify-tools wget sudo lsb-release kmod && \
     useradd smbuser -M && \
     chmod 0755 /opt/bin/cryfs_install.sh && \
     rm -rf /var/lib/apt/lists/* \
