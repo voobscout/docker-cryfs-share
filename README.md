@@ -1,4 +1,4 @@
-# mounts cryfs at /opt/.exports and shares it via cifs/nfs
+# mounts / shares cryfs via cifs/nfs
 
 ```bash
 docker run -d -ti --privileged \
