@@ -24,8 +24,6 @@ RUN export DEBIAN_FRONTEND='noninteractive' && \
     /var/log/bootstrap.log \
     /var/log/dpkg.log
 
-VOLUME /etc/samba
-
 COPY entrypoint.sh /
 COPY smb.conf /etc/samba/smb.conf
 COPY exports /etc/exports
